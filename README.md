@@ -3,10 +3,9 @@
 A toy shell, developed in order to understand process manipulation through POSIX API.
 
 ## Features:
-
-	- Redirections: `ls -la > list.txt` & `cat < list.txt`
-	- Pipes: `ls -la | grep sash.bin`
-	- Different prompts based on eUID
+- Redirections: `ls -la > list.txt` & `cat < list.txt`
+- Pipes: `ls -la | grep sash.bin`
+- Different prompts based on eUID
 
 ## How to Compile:
 ```sh
