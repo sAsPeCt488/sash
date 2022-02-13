@@ -81,13 +81,11 @@ int sash_printprompt()
   }
   if (euid != 0)
   {
-    printf("\n\x1b[34m(\x1b[0m%s\x1b[34m)\x1b[0m-\x1b[34m[\x1b[0m%s\x1b[34m]\x1b[0m", username, pwd);
-    printf("\n\x1b[34m└─\x1b[0m$ ");
+    printf("(%s) - [%s] $", username, pwd);
   }
   else
   {
-    printf("\n\x1b[34m┌──(\x1b[0m%s\x1b[34m)\x1b[0m-\x1b[34m[\x1b[0m%s\x1b[34m]\x1b[0m ", username, pwd);
-    printf("\n\x1b[34m└─\x1b[0m\x1b[31m#\x1b[0m ");
+    printf("(%s) - [%s] # ", username, pwd);
   }
   free(pwd);
   pwd = NULL;
