@@ -1,9 +1,9 @@
 
 CC = gcc
-SRC = $(wildcard src/*.c)
+SRC = $(wildcard src/*/*.c)
 
 sash:
-		$(CC) $(SRC) -Wall -o sash.bin
+		$(CC) src/main.c $(SRC) -Wall -o sash.bin -I src
 
 clean:
 		rm -f sash.bin
