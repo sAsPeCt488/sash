@@ -7,7 +7,7 @@ A toy shell, developed in order to understand process manipulation through POSIX
 - Pipes: `ls -la | grep sash.bin`
 - Different prompts based on eUID
 
-## How to Compile:
+## How to Βuild:
 ```sh
 git clone https://github.com/sAsPeCt488/sash.git
 cd sash
